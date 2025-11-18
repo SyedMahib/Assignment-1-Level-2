@@ -1,4 +1,5 @@
 1- TypeScript-এ Interface এবং Type এর মধ্যে কী কী পার্থক্য আছে?
+<br>
 ans : TypeScript-এ interface এবং type alias—দুটোই object এর structure নির্ধারণ করতে ব্যবহৃত হয়, কিন্তু কিছু গুরুত্বপূর্ণ পার্থক্য রয়েছে:
 
 ** Extension/Inheritance
