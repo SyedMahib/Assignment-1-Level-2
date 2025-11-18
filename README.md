@@ -3,10 +3,11 @@
 ans : TypeScript-এ interface এবং type alias—দুটোই object এর structure নির্ধারণ করতে ব্যবহৃত হয়, কিন্তু কিছু গুরুত্বপূর্ণ পার্থক্য রয়েছে:
 
 ** Extension/Inheritance
+<br>
 -> Interface: এক বা একাধিক interface কে extends করতে পারে।
 -> Type: type alias intersection (&) ব্যবহার করে অন্যান্য type এর সাথে মিক্স করা যায়।
 
-উদাহরণ:
+উদাহরণ: <br>
 ts
 ```
 interface A { name: string }
@@ -17,11 +18,13 @@ type Y = X & { age: number }
 
 ```
 
-** Declaration Merging (ঘোষণা একত্রিত হওয়া)
+** Declaration Merging (ঘোষণা একত্রিত হওয়া) 
+<br>
 -> Interface: একই নামে দুইটি interface লিখলে TypeScript এগুলোকে merge করে।
 -> Type: type alias কোনোভাবেই merge হয় না।
 
 উদাহরণ:
+<br>
 ts
 ```
 interface User { name: string }
@@ -31,25 +34,30 @@ interface User { age: number }
 ```
 
 ** Primitive, Union & Tuple সাপোর্ট
+<br>
 -> Interface: কেবলমাত্র object structure এর জন্য ভালো।
 -> Type: primitive, union, intersection, tuple—সবকিছুই represent করতে পারে।
 
 উদাহরণ:
+<br>
 ts
 ```
 type ID = string | number;  // Interface দিয়ে করা যায় না
 
 ```
 ** Implements
+<br>
 -> Interface: class implements করতে পারে।
 -> Type: type alias ও class implements করতে পারে — তবে অবজেক্ট স্ট্রাকচারের ক্ষেত্রে বেশি ব্যবহৃত হয়।
 
 ** Syntax এবং Use-case Preference
+<br>
 -> Interface: সাধারণত object shape, class contract এবং API structure এর জন্য ব্যবহৃত হয়।
 -> Type: complex type operations, union, mapped type, এবং advanced টাইপিং এর জন্য ভালো।
 
 
 2- TypeScript-এ keyof কীওয়ার্ডের ব্যবহার কী? একটি উদাহরণসহ ব্যাখ্যা করুন।
+<br>
 ans : TypeScript-এর keyof কীওয়ার্ড একটি object type-এর সবগুলো key-এর union type তৈরি করে। অর্থাৎ, কোনো object-এর property নামগুলোকে টাইপ হিসেবে ব্যবহার করতে চাইলে keyof অত্যন্ত উপকারী।
 
 এটি মূলত type-safe access, generic utility functions, এবং object property validation তৈরিতে ব্যবহৃত হয়।
