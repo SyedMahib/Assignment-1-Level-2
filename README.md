@@ -4,7 +4,7 @@ ans : TypeScript-এ interface এবং type alias—দুটোই object এ
 
 ** Extension/Inheritance
 <br>
--> Interface: এক বা একাধিক interface কে extends করতে পারে।
+-> Interface: এক বা একাধিক interface কে extends করতে পারে। <br>
 -> Type: type alias intersection (&) ব্যবহার করে অন্যান্য type এর সাথে মিক্স করা যায়।
 
 উদাহরণ: <br>
@@ -20,7 +20,7 @@ type Y = X & { age: number }
 
 ** Declaration Merging (ঘোষণা একত্রিত হওয়া) 
 <br>
--> Interface: একই নামে দুইটি interface লিখলে TypeScript এগুলোকে merge করে।
+-> Interface: একই নামে দুইটি interface লিখলে TypeScript এগুলোকে merge করে। <br>
 -> Type: type alias কোনোভাবেই merge হয় না।
 
 উদাহরণ:
@@ -35,7 +35,7 @@ interface User { age: number }
 
 ** Primitive, Union & Tuple সাপোর্ট
 <br>
--> Interface: কেবলমাত্র object structure এর জন্য ভালো।
+-> Interface: কেবলমাত্র object structure এর জন্য ভালো। <br>
 -> Type: primitive, union, intersection, tuple—সবকিছুই represent করতে পারে।
 
 উদাহরণ:
@@ -47,12 +47,12 @@ type ID = string | number;  // Interface দিয়ে করা যায় না
 ```
 ** Implements
 <br>
--> Interface: class implements করতে পারে।
+-> Interface: class implements করতে পারে। <br>
 -> Type: type alias ও class implements করতে পারে — তবে অবজেক্ট স্ট্রাকচারের ক্ষেত্রে বেশি ব্যবহৃত হয়।
 
 ** Syntax এবং Use-case Preference
 <br>
--> Interface: সাধারণত object shape, class contract এবং API structure এর জন্য ব্যবহৃত হয়।
+-> Interface: সাধারণত object shape, class contract এবং API structure এর জন্য ব্যবহৃত হয়। <br>
 -> Type: complex type operations, union, mapped type, এবং advanced টাইপিং এর জন্য ভালো।
 
 
